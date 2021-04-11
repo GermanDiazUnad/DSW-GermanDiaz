@@ -11,6 +11,8 @@ body{
 header{
     text-align: center;
     padding-top: 10px;
+    padding-bottom: 10px;
+    background: #f5e2e2;
 }
 
 footer{
