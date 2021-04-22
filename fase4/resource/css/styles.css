@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+ol, ul {
+    padding-left: 0px;
+}
+
+body{
+    background-color: #fff8f8;
+}
+
+header{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #f5e2e2;
+}
+
+footer{
+    background: #f5e2e2;
+    padding: 10px;
+}
+
+nav.menu {
+    height: 25vh;
+    width: 100%;
+}
+
+nav.menu > ul{
+    height: 100%;
+    align-items: baseline;
+    justify-content: center;
+}
+
+nav.menu li {
+    list-style: none;
+} 
+
+.menu ul li > a {
+    text-decoration: none;
+    color: black;
+} 
+
+.menu > ul > li{
+    box-shadow: 2px 5px 6px 0px rgb(0 0 0 / 32%);
+    padding: 10px;
+    border: solid 2px black;
+} 
+
+.menu > ul > li:hover {
+    background: #b8b5eb;
+    border-radius: 3px;
+    transition: 1.0s all ease;
+} 
+
+.menu > ul > li > ul > li{
+    display: none;
+    padding-top: 10px;
+    padding-bottom: 8px;
+} 
+
+.menu > ul > li > ul > li:nth-child(n+2){
+    border-top: solid 1px;
+} 
+
+
+.menu ul li:hover > ul li{
+    display: block;
+}
+
+.option-active{
+    background: #b8b5eb;
+}
+
+.header-space{
+    height: 10vh;
+}
+.container-flexbox-unad{
+    display: flex;
+}
+
+.container-content {
+    width: 100%;
+    padding: 0 4vw 0 4vw;
+}
+
+.container-content.home{
+    width: 70vw;
+}
+
+.container-content-rigth{
+    width: 30vw;
+}
+
+.aling-center{
+    text-align: center;
+}
+.text-content{
+    text-align: justify;
+}
+
+.width-main{
+    min-height: 25.5vw;
+}
+
+/***TIMELINE***/
+#timeline-content {
+    text-align: center;  
+  }
+  
+  /* Timeline */
+  
+.timeline {
+    border-left: 4px solid #9098a9;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;    
+    background: #f5e2e2;
+    margin: 50px auto;  
+    letter-spacing: 0.5px;   
+    position: relative;
+    line-height: 1.4em;
+    font-size: 1.03em;   
+    padding: 50px;   
+    list-style: none;
+    text-align: left;  
+    font-weight: 100;  
+    max-width: 90%; 
+}
+
+.timeline h1 {
+    letter-spacing: 1.5px;
+    font-weight: 100;
+    font-size: 1.4em;    
+}
+.timeline h2, h3 {
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    font-size: 1.4em;
+   }
+   
+.timeline .event {
+    border-bottom: 1px dashed rgb(99 83 83 / 40%);
+    padding-bottom: calc((50px * 0.5));
+    margin-bottom: 50px;  
+    position: relative;
+}
+
+.timeline .event:last-of-type { 
+    padding-bottom: 0;
+    margin-bottom: 0; 
+    border: none;      
+  }
+
+.timeline .event:before, .timeline .event:after {
+    position: absolute;
+    display: block;
+    top: 0;
+  }
+
+.timeline .event:before {
+    left: calc((((120px * 0.6) + 50px + 4px + 26px + (4px * 2)) * 1.5) * -1);    
+    content: attr(data-date);
+    text-align: right;
+    font-weight: 100;    
+    font-size: 0.9em;
+    min-width: 120px;
+  }
+
+.timeline .event:after {
+    box-shadow: 0 0 0 4px #9098a9;    
+    left: calc((50px + 4px + (11px * 0.35)) * -1);        
+    background: #fff8f8;    
+    border-radius: 50%;  
+    height: 11px;
+    width: 11px;
+    content: "";
+    top: 5px;
+}
